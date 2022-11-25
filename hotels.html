@@ -4,25 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sedona</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="">Информация</a></li>
-                <li><a href="">Фото и видео</a></li>
-                <li> <a href=""><img src="" alt="логотип"></a></li>
-                <li><a href="">Карта штата</a></li>
-                <li>Гостиницы</li>
-            </ul>
-        </nav>
+        <p>
+            <a href="index.html"><img src="image/logo.jpg" alt="Логотип Седоны"></a>
+        </p>
+        <ul>
+            <li><a href="">Информация</a></li>
+            <li><a href="">Фото и видео</a></li>
+            <li><a href="">Карта штата</a></li>
+            <li>Гостиницы</li>
+        </ul>
     </header>
     <main>
-        <h1>Гостиницы в Седоне</h1>
-        <!-- Тут будет форма -->
+        <h1 class="visually-hidden">Гостиницы в Седоне</h1>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru"></form>
+            <fieldset>
+                <legend>Инфрастуктура:</legend>
+                <ul>
+                    <li class="">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                        <label for="filter-swimming-pool">Бассейн</label>
+                    </li>
+                    <li class="">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                        <label for="filter-parking">Парковка</label>
+                    </li>
+                    <li class="">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                        <label for="filter-wi-fi">wi-fi</label> 
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Тип жилья:</legend>
+                <ul>
+                    <li class="">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                        <label for="filter-hotel">Гостиница</label>
+                    </li>
+                    <li class="">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                        <label for="filter-motel">Мотель</label> 
+                    </li>
+                    <li>
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                        <label for="filter-apartments">Апартаменты</label> 
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Стоимость в сутки (Р):</legend>
+                    <label for="price">От 0 до 3000</label>
+                    0<input type="range" min="0"max="3000" id="price" name="price" step="1">3000
+            </fieldset>
         <p>
-            <button>Показать</button>
+            <a class="button" href="#">Показать</a>
         </p>
         <h2>Результаты поиска</h2>
         <p>Найдено:3</p>
@@ -40,57 +79,66 @@
             <h2>Список гостиниц</h2>
             <ul>
                 <li>
-                    <img src="" alt="фото гостиницы Amara" />
+                    <img src="image/photo-hotel.jpg" alt="фото гостиницы Amara" />
                     <h4>Amara Resort & Spa</h4>
                     <p>от 4 000 Р</p>
                     <p>Гостиница</p>
-                    <a href="">Подробнее</a>
-                    <a href="">Забронировать</a>
+                    <a class="button" href="#">Подробнее</a>
+                    <a class="button" href="#">Забронировать</a>
                     <p>Рейтинг: 8,5</p>
+                    <img src="image/star.svg" alt="рейтинг по звездам">
+                    <img src="image/star.svg" alt="рейтинг по звездам">
+                    <img src="image/star.svg" alt="рейтинг по звездам">
+                    <img src="image/star.svg" alt="рейтинг по звездам">
                 </li>
                 <li>
-                    <img src="" alt="фото мотеля Desert" />
+                    <img src="image/photo-motel.jpg" alt="фото мотеля Desert" />
                     <h4>Desert Quail Inn</h4>
                     <p>Мотель</p>
                     <p>от 3 000 Р</p>
-                    <a href="">Подробнее</a>
-                    <a href="">Забронировать</a>\
+                    <a class="button" href="#">Подробнее</a>
+                    <a class="button" href="#">Забронировать</a>\
                     <p>Рейтинг 8,9</p>
+                    <img src="image/star.svg" alt="рейтинг по звездам">
+                    <img src="image/star.svg" alt="рейтинг по звездам">
+                    <img src="image/star.svg" alt="рейтинг по звездам">
                 </li>
                 <li>
-                    <img src="" alt="фото апартаментов Villas" />
+                    <img src="image/photo-apartament.jpg" alt="фото апартаментов Villas" />
                     <h4>Villas at Poco Diablo</h4>
                     <p>Апартаменты</p>
                     <p>от 2 000 Р</p>
-                    <a href="">Подробнее</a>
-                    <a href="">Забронировать</a>
+                    <a class="button" href="#">Подробнее</a>
+                    <a class="button" href="#">Забронировать</a>
                     <p>Рейтинг 9,2</p>
+                    <img src="image/star.svg" alt="рейтинг по звездам">
+                    <img src="image/star.svg" alt="рейтинг по звездам">
                 </li>
             </ul>
         </section>
     </main>
     <footer>
-        <a href="">Visitsedona</a>
+        <a href="index.html">Visitsedona</a>
             <h3>Ссылки на социальные сети</h3>
             <ul>
                 <li>
                     <a href="" title="Твиттер">
-                        <img src="" alt="иконка твиттера" />
+                        <img src="image/twitter-logo.svg" alt="иконка твиттера" />
                     </a>
                 </li>
                 <li>
                     <a href="" title="Фейсбук">
-                        <img src="" alt="иконка фейсбук" />
+                        <img src="image/fb-icon.svg" alt="иконка фейсбук" />
                     </a>
                 </li>
                 <li>
                     <a href="" title="Ютуб">
-                        <img src="" alt="иконка ютуба" />
+                        <img src="image/youtube-icon.svg" alt="иконка ютуба" />
                     </a>
                 </li>
             </ul>
             <p>Website by</p>
-            <img src="" alt="логотип компании Html academy" />
+            <img src="image/logo-name.png" alt="логотип компании Html academy" />
     </footer>
 </body>
 </html>
