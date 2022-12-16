@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    background-image: url("image/background-mountain.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover {
+    color:  #81b3d2;
+}
+
+.site-navigation a:focus {
+    color: #000000;
+}
+
+.site-navigation a:active {
+    color: #766357;
+}
+
+.visually-hidden {
+    transform: scale(0);
+    position: fixed;
+}
+
+.benefits,
+.benefits-item {
+    list-style: none;
+}
+
+.benefits {
+    text-align: center;
+}
+
+.benefits-list h3 {
+    font-size: 21px;
+    line-height: 21px;
+    
+}
+
+.description {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.five-benefits {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.benefits-item h4 {
+    font-size: 21px;
+    line-height: 21px;
+
+}
+
+.five-benefits-housing,
+.five-benefits-food,
+.five-benefits-gifts,
+.five-benefits-attraction,
+.five-benefits-road,
+.five-benefits-tourists {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.benefits-second {
+    background-color: #eeeeee;    
+    background-image: url("gray-bc.jpg");
+
+}
+
+.first-blue-column,
+.second-blue-column {
+    color: #ffffff;
+    background-color: #81b3d2;
+    
+}
+
+.first-blue-column-benefits,
+.second-blue-column-benefits {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.booking-interested {
+    font-size: 30px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+}
+
+.booking-interested-date {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+}
+
+.hotel-booking-search {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    background-color: #766357;
+    color: #ffffff;
+    text-align: center;
+}
+
+.search {
+    list-style: none;
+}
+
+.button-booking {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #81b3d2;
+    border: none;
+}
+
+.hashtag {
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.twitter,
+.facebook,
+.youtube {
+    background-color: #81b3d2;
+}
+
+.main-footer {
+    background-color: #f9fbf6;
+    opacity: 0.9;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.logo-name {
+    background-color: #000000;
+}

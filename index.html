@@ -11,22 +11,24 @@
 
 <body>
     <header class="main-header">
+        <nav class="main-navigation">
         <p class="main-header-logo">
             <img src="image/logo.png" width="138" height="70" alt="Логотип Седоны">
         </p>
-        <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
+            <ul class="site-navigation">
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="welcome">
         <h1 class="visually-hidden">Седона - красивый город в Аризоне</h1>
         <article>
             <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-            <div class="comtainer">
+            <div class="container">
                 <img class="welcome-sity" src="image/Welcome.png" width="188" height="45" alt="Добро пожаловать">
                 <img class="welcome-inscription" src="image/inscription-to-the-gorgeous.png" width="176" height="30" alt="в великолепную">
                 <img class="welcome-sedona" src="image/Sedona.png" width="458" height="78" alt="Седона">
@@ -42,61 +44,67 @@
                 Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
             </p>
             <ul class="benefits">
-                <li>
-                    <h3>Настоящий городок</h3>
-                    <p>№1</p>
-                    <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+                <div class="first-blue-column">
+                    <li class="benefits-list">
+                        <h3>Настоящий городок</h3>
+                        <p class="first-blue-column-benefits" >№1</p>
+                        <p class="first-blue-column-benefits">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
                     <img src="image/background-photofalg.jpg" width="512" height="256" alt="фото с флагом">
-                    <ul>
+                    <ul class="benefits-item">
                         <li>
                             <img src="image/icon-home.svg" width="75" height="72" alt="иконка дома">
                             <h4 class="benefits-item">Жилье</h4>
-                            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                            <p class="five-benefits-housing">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                         </li>
                         <li>
                             <img src="image/icon-burger.svg" width="75" height="72" alt="иконка дома">
                             <h4 class="benefits-item">Еда</h4>
-                            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                            <p class="five-benefits-food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </li>
                         <li>
                             <img src="image/icon-gift.svg" width="75" height="72" alt="иконка дома">
                             <h4 class="benefits-item">Сувениры</h4>
-                            <p>Не только китайского, но и местного производства!</p>
-                        </li>
+                            <p class="five-benefits-gifts">Не только китайского, но и местного производства!</p>
+                    </li>
                     </ul>
-                </li>
+                    </li>
             </ul>
             <ul class="benefits">
-                <li>
-                    <h3>Там есть мост дьявола</h3>
-                    <p>№2</p>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <div class="second-blue-column">
+                    <li class="benefits-list">
+                        <h3>Там есть мост дьявола</h3>
+                        <p class="first-blue-column-benefits" >№2</p>
+                        <p class="second-blue-column-benefits">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    </div>
                     <img src="image/background-photo-canyon.jpg" width="512" height="256" alt="фото с мостом">
                 </li>
-                <li>
-                    <h3>Небольшая площадь</h3>
-                    <p>№3</p>
-                    <p>Все достопримечательности находятся очень близко</p>
-                </li>
-                <li>
-                    <h3>Красивая дорога</h3>
-                    <p>№4</p>
-                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </li>
-                <li>
-                    <h3>Мало туристов</h3>
-                    <p>№5</p>
-                    <p>Большинство едет в гранд каньон и толпится там</p>
-                </li>
+                <div class="benefits-second">
+                    <li class="benefits-list">
+                        <h3 class="benefits-list-attraction">Небольшая площадь</h3>
+                        <p>№3</p>
+                        <p class="five-benefits-attraction">Все достопримечательности находятся очень близко</p>
+                    </li>
+                    <li class="benefits-list">
+                        <h3 class="benefits-list-road">Красивая дорога</h3>
+                        <p>№4</p>
+                        <p class="five-benefits-road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </li>
+                    <li class="benefits-list">
+                        <h3 class="benefits-list-tourists">Мало туристов</h3>
+                        <p>№5</p>
+                        <p class="five-benefits-tourists">Большинство едет в гранд каньон и толпится там</p>
+                    </li>
             </ul>
+                </div>
         </article>
 
         <section class="booking">
             <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-            <p>Заинтересовались?</p>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+            <p class="booking-interested">Заинтересовались?</p>
+            <p class="booking-interested-date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
             <div class="hotel-booking">
-                <p>Поиск гостиницы в Седоне</p>
+                <p class="hotel-booking-search">Поиск гостиницы в Седоне</p>
                 <ul class="search" >
                     <li class="search-arrival-date">
                         <label for="arrival-date">Дата заезда:</label>
@@ -116,32 +124,32 @@
                     </li>
                 </ul>
             </div>
-            <a class="button button-booking button-search" href="#">Найти</a>
+            <a class="button button-booking" href="#">Найти</a>
         </section>
     </main>
 
-    <footer class="main-foote">
-        <a href="index.html">#Visitsedona</a>
+    <footer class="main-footer">
+        <a class="hashtag" href="index.html">#Visitsedona</a>
             <h3>Ссылки на социальные сети</h3>
             <ul class="footer-social">
                 <li>
                     <a href="" title="Твиттер">
-                        <img src="image/twitter-icon.svg" alt="иконка твиттера" />
+                        <img class="twitter" src="image/twitter-icon.svg" width="17" height="15" alt="иконка твиттера"/>
                     </a>
                 </li>
                 <li>
                     <a href="" title="Фейсбук">
-                        <img src="image/fb-icon.svg" alt="иконка фейсбук" />
+                        <img class="facebook" src="image/fb-icon.svg" width="17" height="15" alt="иконка фейсбук"/>
                     </a>
                 </li>
                 <li>
                     <a href="" title="Ютуб">
-                        <img src="image/youtube-icon.svg" alt="иконка ютуба" />
+                        <img class="youtube" src="image/youtube-icon.svg" width="17" height="15" alt="иконка ютуба"/>
                     </a>
                 </li>
             </ul>
             <p class="footer-copyright">Website by</p>
-            <img src="image/logo-name.png" alt="логотип компании Html academy" />
+            <img class="logo-name" src="image/logo-name.png" alt="логотип компании Html academy" />
     </footer>
 </body>
 </html>
