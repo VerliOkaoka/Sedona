@@ -5,40 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Город Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <header>
-        <p>
-            <img src="image/logo.jpg" alt="Логотип Седоны">
+    <header class="main-header">
+        <p class="main-header-logo">
+            <img src="image/logo.png" width="138" height="70" alt="Логотип Седоны">
         </p>
-        <ul>
-            <li><a href="">Информация</a></li>
-            <li><a href="">Фото и видео</a></li>
-            <li><a href="">Карта штата</a></li>
+        <ul class="site-navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
     </header>
-    <main>
+
+    <main class="welcome">
         <h1 class="visually-hidden">Седона - красивый город в Аризоне</h1>
         <article>
             <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-            <img src="image/background-photo-mountains.jpg" width="768" height="512" alt="красивые горы Седоны">
-            <p>
-                Welcome to the gorgeous Sedona
-            </p>
-            <p>
-                Because the Grand Canyon sucks!
-            </p>
+            <div class="comtainer">
+                <img class="welcome-sity" src="image/Welcome.png" width="188" height="45" alt="Добро пожаловать">
+                <img class="welcome-inscription" src="image/inscription-to-the-gorgeous.png" width="176" height="30" alt="в великолепную">
+                <img class="welcome-sedona" src="image/Sedona.png" width="458" height="78" alt="Седона">
+                <img class="welcome-canyon" src="image/inscription-becausethe-grand-canyon-sucks.png" width="296" height="80" alt="потому что Гранд Каньон сосёт">
+            </div>
         </article>
         <article>
             <h2 class="visually-hidden">Преимущества Седоны</h2>
-            <p>
+            <p class="description">
                 Седона — небольшой городок в Аризоне, заслуживающий большего!
             </p>
-            <p>
+            <p class="five-benefits">
                 Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
             </p>
-            <ul>
+            <ul class="benefits">
                 <li>
                     <h3>Настоящий городок</h3>
                     <p>№1</p>
@@ -47,22 +50,23 @@
                     <ul>
                         <li>
                             <img src="image/icon-home.svg" width="75" height="72" alt="иконка дома">
-                            <h4>Жилье</h4>
+                            <h4 class="benefits-item">Жилье</h4>
                             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                         </li>
                         <li>
                             <img src="image/icon-burger.svg" width="75" height="72" alt="иконка дома">
-                            <h4>Еда</h4>
+                            <h4 class="benefits-item">Еда</h4>
                             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </li>
                         <li>
                             <img src="image/icon-gift.svg" width="75" height="72" alt="иконка дома">
-                            <h4>Сувениры</h4>
+                            <h4 class="benefits-item">Сувениры</h4>
                             <p>Не только китайского, но и местного производства!</p>
                         </li>
                     </ul>
                 </li>
-            <ul>
+            </ul>
+            <ul class="benefits">
                 <li>
                     <h3>Там есть мост дьявола</h3>
                     <p>№2</p>
@@ -86,45 +90,58 @@
                 </li>
             </ul>
         </article>
-        <section>
+
+        <section class="booking">
             <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
             <p>Заинтересовались?</p>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-            <p>Поиск гостиницы в Седоне</p>
-            <ul>
-                <li>
-                    <label for="arrival-date">Дата заезда:</label>
-                    <input type="date" name="gate" value="24.04.2022" id="arrival-date" placeholder="24.04.2022">
-                </li>
-                <li>
-                    <label for="date-departure">Дата выезда:</label>
-                    <input type="date" name="date" id="date-departure" value="04.07.2022" placeholder="204.07.2022">
-                </li>
-                <li>
-                    <label for="adults">Взрослые</label>
-                    <input type="number" name="adults-amount" id="adults" value="2">
-                </li>
-                <li>
-                    <label for="children">Дети</label>
-                    <input type="number" name="children-amount" id="children" value="0">
-                </li>
-            </ul>
-            <a class="button" href="#">Найти</a>
+            <div class="hotel-booking">
+                <p>Поиск гостиницы в Седоне</p>
+                <ul class="search" >
+                    <li class="search-arrival-date">
+                        <label for="arrival-date">Дата заезда:</label>
+                        <input type="date" name="gate" value="24.04.2022" id="arrival-date" placeholder="24.04.2022">
+                    </li>
+                    <li class="search-depature-date">
+                        <label for="date-departure">Дата выезда:</label>
+                        <input type="date" name="date" id="date-departure" value="04.07.2022" placeholder="204.07.2022">
+                    </li>
+                    <li class="search-adult">
+                        <label for="adults">Взрослые</label>
+                        <input type="number" name="adults-amount" id="adults" value="2">
+                    </li>
+                    <li class="search-children">
+                        <label for="children">Дети</label>
+                        <input type="number" name="children-amount" id="children" value="0">
+                    </li>
+                </ul>
+            </div>
+            <a class="button button-booking button-search" href="#">Найти</a>
         </section>
     </main>
-    <footer>
-        <a href="">Visitsedona</a>
-        <h3 class="visually-hidden" >Ссылки на социальные сети</h3>
-        <ul>
-            <li><a href="">Твиттер</a>
-            </li>
-            <li><a href="">Фейсбук</a>
-            </li>
-            <li><a href="">Ютуб</a>
-            </li>
-        </ul>
-        <p>Website by</p>
-        <img src="image/logo-name.png" alt="логотип html academy" width="115" height="41">
+
+    <footer class="main-foote">
+        <a href="index.html">#Visitsedona</a>
+            <h3>Ссылки на социальные сети</h3>
+            <ul class="footer-social">
+                <li>
+                    <a href="" title="Твиттер">
+                        <img src="image/twitter-icon.svg" alt="иконка твиттера" />
+                    </a>
+                </li>
+                <li>
+                    <a href="" title="Фейсбук">
+                        <img src="image/fb-icon.svg" alt="иконка фейсбук" />
+                    </a>
+                </li>
+                <li>
+                    <a href="" title="Ютуб">
+                        <img src="image/youtube-icon.svg" alt="иконка ютуба" />
+                    </a>
+                </li>
+            </ul>
+            <p class="footer-copyright">Website by</p>
+            <img src="image/logo-name.png" alt="логотип компании Html academy" />
     </footer>
 </body>
 </html>
