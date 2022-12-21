@@ -8,9 +8,16 @@ body {
     color: #333333;
     text-transform: uppercase;
     background-color: #ffffff;
-    background-image: url("image/background-mountain.jpg");
-    background-position: top center;
+    background-image: url("../image/background-mountain.jpg");
+    background-position: 0px 150px;
     background-repeat: no-repeat;
+}
+
+.inner-page {
+    background-image: url("../image/background-mountain-hotels.jpg");
+    width: 768px;
+    height: 418px;
+    background-color: #ffffff;
 }
 
 a {
@@ -49,6 +56,88 @@ a {
     position: fixed;
 }
 
+.filter-option {
+    list-style: none;
+}
+
+.filter-object {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+
+.filter ul {
+    list-style: none;
+    line-height: 21px;
+}
+
+.infrastructure {
+    color: #ffffff;
+}
+
+.type-of-housing {
+    color: #ffffff;
+}
+
+.price {
+    color: #ffffff;
+}
+
+.results {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.sorting {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.sorting-price {
+    color: #81b3d2;
+}
+
+.sorting-type {
+    color: #000000;
+    opacity: 0.3;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #81b3d2;
+}
+
+.sorting:active {
+    color: #000000;
+}
+
+
+.hotels-item {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+.hotels-item-type {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: 400;
+}
+
 .benefits,
 .benefits-item {
     list-style: none;
@@ -83,12 +172,7 @@ a {
 
 }
 
-.five-benefits-housing,
-.five-benefits-food,
-.five-benefits-gifts,
-.five-benefits-attraction,
-.five-benefits-road,
-.five-benefits-tourists {
+.benefits-description {
     font-size: 14px;
     line-height: 21px;
     color: #333333;
@@ -157,8 +241,61 @@ a {
     border: none;
 }
 
+.button-search-hotels {
+    font: inherit;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: #ffffff;
+    border: solid;
+}
+
+.button-search-hotels:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    font-weight: 400;
+}
+
+.button-booking a:hover {
+    background-color: #669ec0;
+}
+
+.button-booking a:active {
+    background-color: #5496bd;
+    opacity: 0.3;
+}
+
+.button-more-info {
+    font-size: 14px;
+    line-height: 21px;
+    font: inherit;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.button-check {
+    font-size: 14px;
+    line-height: 21px;
+    font: inherit;
+    color: #ffffff;
+    background-color: #766357;
+}
+
+.rating {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #666666;
+    background-color: #f2f2f2;
+    text-align: right;
+}
+
 .hashtag {
     font-size: 21px;
+    line-height: 26px;
     font-weight: 700;
     text-decoration: none;
     color: #000000;
@@ -168,10 +305,17 @@ a {
     list-style: none;
 }
 
-.twitter,
-.facebook,
-.youtube {
+.social-icon {
     background-color: #81b3d2;
+}
+
+.social-icon a:hover {
+    background-color: #669ec0;
+}
+
+.social-icon a:active {
+    background-color: #5496bd;
+    opacity: 0.3;
 }
 
 .main-footer {
@@ -186,5 +330,19 @@ a {
 }
 
 .logo-name {
-    background-color: #000000;
+    display: block;
+    width: 115px;
+    height: 41px;
+    text-decoration: none;
+    background-image: url("../image/logo-name.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo-name:hover {
+    background-image: url("../image/logo-name-blue.png")
+}
+
+.logo-name:active {
+    background-image: url("../image/logo-name-gray.png");
 }
