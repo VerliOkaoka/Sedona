@@ -226,8 +226,11 @@ a {
 }
 
 .row-two {
-    height: 257px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
+    height: 257px;
     background-color: #81b3d2;
     background-image: url("../image/background-photo-canyon.jpg");
     background-position: top left;
@@ -240,7 +243,6 @@ a {
 
 .text-wrapper {
     width: 256px;
-    padding-top: 15px;
 }
 
 
@@ -251,13 +253,15 @@ a {
 }
 
 .two-text-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
     width: 256px;
     padding-top: 15px;
     
+}
+
+.two-text-wrapper h3 {
+    padding: 0;
+    margin: 0;
+    padding-top: 45px;
 }
 
 .description {
@@ -342,13 +346,50 @@ a {
     font-weight: 400;
 }
 
+.last-benefits-row {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    height: 257px;
+
+    padding: 0;
+    margin-bottom: 54px;
+    padding-left: 47px;
+    padding-right: 47px;
+
+    background-color: #eeeeee;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-bottom: 55px;
+}
+
+.last-benefits-list {
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+}
+
+.last-benefits-list h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+}
+
+.last-benefits-list p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+}
+
 .first-blue-column-benefits {
     margin: 0;
     padding: 0;
-    padding-top: 25px;
+    padding-top: 20px;
 
     text-align: center;
-
 }
 
 .booking-interested {
@@ -357,6 +398,10 @@ a {
     color: #000000;
     text-align: center;
     font-weight: 700;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 34px;
 }
 
 .booking-interested-date {
@@ -365,6 +410,10 @@ a {
     font-weight: 400;
     color: #333333;
     text-align: center;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
 }
 
 .hotel-booking-search {
