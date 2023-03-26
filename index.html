@@ -118,36 +118,58 @@
                         </ul>
                     </li>
                 </ul>
-            </article>
-
-            <section class="booking">
-                <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-                <p class="booking-interested">Заинтересовались?</p>
-                <p class="booking-interested-date">Укажите предполагаемые даты поездки,<br> 
-                    и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-                <div class="hotel-booking">
-                    <p class="hotel-booking-search">Поиск гостиницы в Седоне</p>
-                    <ul class="search" >
-                        <li class="search-arrival-date">
-                            <label for="arrival-date">Дата заезда:</label>
-                            <input type="date" name="gate" value="24.04.2022" id="arrival-date" placeholder="24.04.2022">
-                        </li>
-                        <li class="search-depature-date">
-                            <label for="date-departure">Дата выезда:</label>
-                            <input type="date" name="date" id="date-departure" value="04.07.2022" placeholder="204.07.2022">
-                        </li>
-                        <li class="search-adult">
-                            <label for="adults">Взрослые</label>
-                            <input type="number" name="adults-amount" id="adults" value="2">
-                        </li>
-                        <li class="search-children">
-                            <label for="children">Дети</label>
-                            <input type="number" name="children-amount" id="children" value="0">
-                        </li>
-                    </ul>
-                </div>
-                <a class="button button-booking" href="#">Найти</a>
-            </section>
+                <section class="booking">
+                    <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+                    <p class="booking-interested">Заинтересовались?</p>
+                    <p class="booking-interested-date">Укажите предполагаемые даты поездки,<br> 
+                        и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+                    </article>
+                    <div class="hotels-container">
+                        <div class="hotels-wrapper">
+                            <div class="hotel-booking">
+                                <p class="hotel-booking-search">Поиск гостиницы в Седоне</p>
+                                    <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                                        <div class="form-row">
+                                            <p class="search-arrival-date">
+                                                <label class="row-title" for="arrival-date">Дата заезда:</label>
+                                                <input class="text-input" type="date" name="gate" value="24.04.2022" id="arrival-date" placeholder="24.04.2022">
+                                                <button type="button" class="calendar"></button>
+                                            </p>
+                                            <p class="search-depature-date">
+                                                <label class="row-title" for="date-departure">Дата выезда:</label>
+                                                <input class="text-input" type="date" name="date" id="date-departure" value="04.07.2022" placeholder="204.07.2022">
+                                                <button type="button" class="calendar"></button>
+                                            </p>
+                                            <div class="adults-children">
+                                                <div class="adults">
+                                                    <div class="search-adult">
+                                                        <label class="row-title" for="adults">Взрослые:</label>
+                                                        <div class="counter">
+                                                            <!-- <button type="button" class="decrease">&#8211;</button> -->
+                                                            <input class="text-adults" type="text" name="adults-amount" id="adults" value="2">
+                                                            <!-- <button type="button" class="increase">&#43;</button> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="kids">
+                                                    <div class="search-children">
+                                                        <label class="row-title-ch" for="children">Дети:</label>
+                                                        <div class="counter">
+                                                            <!-- <button type="button" class="decrease">&#8211;</button> -->
+                                                            <input class="text-chlidren" type="text" name="children-amount" id="children" value="0">
+                                                            <!-- <button type="button" class="increase">&#43;</button> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="btn" value="Найти">
+                                    </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
         </main>
 
         <footer class="main-footer">

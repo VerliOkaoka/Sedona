@@ -10,6 +10,120 @@ body {
     background-color: #ffffff;
 }
 
+.hotels-container {
+    width: 768px;
+  height: 593px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../image/map.jpg");
+  background-position: 0 172px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.hotels-wrapper {
+width: 567px;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+}
+
+.text-input {
+    width: 345px;
+    box-sizing: border-box;
+    height: 40px;
+    padding-left: 5px;
+
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.adults-children {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.form-row {
+    margin-top: 55px;
+}
+
+.search-adult,
+.search-children {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.text-adults {
+    width: 115px;
+    height: 37px;
+    border: none;
+
+    background-color: #f2f2f2;
+}
+
+.text-chlidren {
+    width: 106px;
+    height: 37px;
+    border: none;
+
+    background-color: #f2f2f2;
+}
+
+.kids {
+    margin-left: 51px;
+}
+
+.btn {
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+
+    width: 459px;
+    height: 58px;
+
+    background-color: #81b3d2;
+    border: none;
+    color: white;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hotel-booking-search {
+    width: 100%;
+    height: 88px;
+    margin: 0;
+    margin-bottom: 54px;
+  align-self: stretch; /* тянись в стороны в своем родителе*/
+  margin-bottom: 15px;
+  box-sizing: border-box;
+
+  background-color: #766357;
+  color: white;
+
+  padding-top: 33px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
 .container {
     width: 768px;
     margin: 0 auto;
@@ -356,14 +470,13 @@ a {
     height: 257px;
 
     padding: 0;
-    margin-bottom: 54px;
     padding-left: 47px;
     padding-right: 47px;
 
     background-color: #eeeeee;
     background-position: top center;
     background-repeat: no-repeat;
-    margin-bottom: 55px;
+    
 }
 
 .last-benefits-list {
@@ -401,7 +514,9 @@ a {
 
     margin: 0;
     padding: 0;
+    margin-top: 53px;
     margin-bottom: 34px;
+    
 }
 
 .booking-interested-date {
@@ -416,20 +531,57 @@ a {
     margin-bottom: 50px;
 }
 
-.hotel-booking-search {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    background-color: #766357;
-    color: #ffffff;
-    text-align: center;
+.hotel-booking {
+    
+    width: 567px; 
+    height: 484px;
 }
 
-.search {
-    list-style: none;
+.appointment-form {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
 }
+
+.calendar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.row-title {
+    width: 113px;
+    
+}
+
+.row-title-ch {
+    width: 66px;
+}
+
+.search-arrival-date,
+.search-depature-date,
+.search-adult,
+.search-children {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* .search {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+} */
 
 .button-booking {
+    width: 460px;
+    height: 55px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
