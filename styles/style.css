@@ -27,7 +27,6 @@ body {
 
 .hotels-wrapper {
 width: 567px;
-  height: 395px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -66,22 +65,61 @@ width: 567px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+
+    position: relative;
+}
+
+.decrease,
+.increase {
+    position: absolute;
+    
+
+
+    border: none;
+    width: 12px;
+    
+
+}
+
+.decrease {
+    left: 15px;
+    top: 18px;
+
+    background-image: url("../image/mns.jpg");
+
+    height: auto;
+    
+}
+
+.increase {
+    right: 15px;
+    top: 13px;
+    padding: 0;
+
+    background-image: url("../image/plus.jpg");
+
+    height: 11px;
+    width: 11px;
 }
 
 .text-adults {
     width: 115px;
     height: 37px;
     border: none;
+    padding-left: 53px;
 
     background-color: #f2f2f2;
+    box-sizing: border-box;
 }
 
 .text-chlidren {
     width: 106px;
     height: 37px;
     border: none;
+    padding-left: 50px;
 
     background-color: #f2f2f2;
+    box-sizing: border-box;
 }
 
 .kids {
@@ -546,8 +584,13 @@ a {
 
 .calendar {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 7px;
+    right: 20px;
+
+    border: none;
+    background-image: url("../image/calendar.jpg");
+    width: 21px;
+    height: 22px;
 }
 
 .row-title {
@@ -569,6 +612,15 @@ a {
     justify-content: flex-start;
     align-items: center;
 }
+
+.search-depature-date {
+    position: relative;
+}
+
+.search-arrival-date {
+    position: relative
+}
+
 
 /* .search {
     list-style: none;
@@ -671,10 +723,41 @@ a {
     opacity: 0.3;
 }
 
+.main-footer .container {
+    display: flex;
+    align-items: center;
+}
+
 .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
     background-color: #f9fbf6;
     opacity: 0.9;
 }
+
+.footer-container {
+    display: flex;
+}
+
+.visiually-hidden {
+    display: none;
+}
+
+.footer-social ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 141px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+
+        
+    }
 
 .footer-copyright {
     font-size: 14px;

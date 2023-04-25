@@ -132,12 +132,12 @@
                                         <div class="form-row">
                                             <p class="search-arrival-date">
                                                 <label class="row-title" for="arrival-date">Дата заезда:</label>
-                                                <input class="text-input" type="date" name="gate" value="24.04.2022" id="arrival-date" placeholder="24.04.2022">
+                                                <input class="text-input" type="text" name="gate" value="24.04.2022" id="arrival-date" placeholder="24.04.2022">
                                                 <button type="button" class="calendar"></button>
                                             </p>
                                             <p class="search-depature-date">
                                                 <label class="row-title" for="date-departure">Дата выезда:</label>
-                                                <input class="text-input" type="date" name="date" id="date-departure" value="04.07.2022" placeholder="204.07.2022">
+                                                <input class="text-input" type="text" name="date" id="date-departure" value="04.07.2022" placeholder="204.07.2022">
                                                 <button type="button" class="calendar"></button>
                                             </p>
                                             <div class="adults-children">
@@ -145,9 +145,9 @@
                                                     <div class="search-adult">
                                                         <label class="row-title" for="adults">Взрослые:</label>
                                                         <div class="counter">
-                                                            <!-- <button type="button" class="decrease">&#8211;</button> -->
+                                                            <button type="button" class="decrease"></button>
                                                             <input class="text-adults" type="text" name="adults-amount" id="adults" value="2">
-                                                            <!-- <button type="button" class="increase">&#43;</button> -->
+                                                            <button type="button" class="increase"></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -155,9 +155,11 @@
                                                     <div class="search-children">
                                                         <label class="row-title-ch" for="children">Дети:</label>
                                                         <div class="counter">
+                                                            <button type="button" class="decrease"></button>
                                                             <!-- <button type="button" class="decrease">&#8211;</button> -->
                                                             <input class="text-chlidren" type="text" name="children-amount" id="children" value="0">
                                                             <!-- <button type="button" class="increase">&#43;</button> -->
+                                                            <button type="button" class="increase"></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -171,30 +173,33 @@
                     </div>
                 </section>
         </main>
-
+    </div>    
         <footer class="main-footer">
-            <a class="hashtag" href="index.html">#Visitsedona</a>
-                <h3>Ссылки на социальные сети</h3>
-                <ul class="footer-social">
-                    <li>
-                        <a href="https://twitter.com" title="Твиттер">
-                            <img class="social-icon" src="image/twitter-icon.svg" width="17" height="15" alt="иконка твиттера"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://ru-ru.facebook.com" title="Фейсбук">
-                            <img class="social-icon" src="image/fb-icon.svg" width="17" height="15" alt="иконка фейсбук"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com" title="Ютуб">
-                            <img class="social-icon" src="image/youtube-icon.svg" width="17" height="15" alt="иконка ютуба"/>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer-container">
+                <a class="hashtag" href="index.html">#Visitsedona</a>
+                <h3 class="visiually-hidden">Ссылки на социальные сети</h3>
+                <div class="footer-social">
+                    <ul class="footer-social">
+                        <li>
+                            <a href="https://twitter.com" title="Твиттер">
+                                <img class="social-icon" src="image/twitter-icon.svg" width="17" height="15" alt="иконка твиттера"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ru-ru.facebook.com" title="Фейсбук">
+                                <img class="social-icon" src="image/fb-icon.svg" width="17" height="15" alt="иконка фейсбук"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com" title="Ютуб">
+                                <img class="social-icon" src="image/youtube-icon.svg" width="17" height="15" alt="иконка ютуба"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <p class="footer-copyright">Website by</p>
                 <a class="logo-name" href="#"></a>
+            </div>
         </footer>
-    </div>
 </body>
 </html>
