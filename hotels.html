@@ -82,11 +82,18 @@
                     <fieldset class="price">
                         <legend>Стоимость в сутки (Р):</legend>
                         <div class="price-filter">
-                            <label for="price" class="filter-object">От 0 до 3000</label>
-                            0<input type="range" min="0"max="3000" id="price" name="price" step="1">3000
+                            <p class="limit">
+                                <span class="from">от 0</span>
+                                <span class="to"> до 3000</span>
+                            </p>
+                            <p class="range">
+                                <span>0</span>
+                                <input type="range" min="0"max="3000" id="price" name="price" step="1" class="inp">
+                                <span>3000</span> 
+                            </p>
                         </div>
                     </fieldset>
-                    <p>
+                    <p class="btn-ser">
                         <a class="button button-search-hotels" href="#">Показать</a>
                     </p>
                 </div>
@@ -108,75 +115,116 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <span>p</span>
+                    <div class="bottom-row">
+                        <div>
+                            <button class="down">
+                                <span class="visiually-hidden">вниз</span></button>
+                                <button class="up">
+                                <span class="visiually-hidden">вверх</span></button>
+                        </div>
                     </div>
                 </div>
                 <section class="hotels">
                     <h2 class="visually-hidden">Список гостиниц</h2>
-                    <div class="hotel-form">
+                    <!-- <div class="hotel-form"> -->
                             <ul class="hotels-list">
                                 <li class="hotels-item">
                                     <p class="hotels-photo">
                                         <img src="image/photo-hotel.jpg" alt="фото гостиницы Amara"/>
                                     </p>
-                                    <h4>Amara Resort & Spa</h4>
-                                    <p class="hotels-item-type">от 4 000 Р</p>
-                                    <p class="hotels-item-type">Гостиница</p>
-                                    <a class="button-more-info" href="#">Подробнее</a>
-                                    <a class="button-check" href="#">Забронировать</a>
-                                    <p class="rating">Рейтинг: 8,5</p>
+                                    <div class="first-hot">
+                                        <h4 class="hotels-title">Amara Resort & Spa</h4>
+                                        <p class="hotels-item-type">
+                                            <span>Гостиница</span> 
+                                            <span> от 4 000 Р</span>
+                                        </p>
+                                        <p class="botton-form">
+                                            <a class="button-more-info" href="#">Подробнее</a>
+                                            <a class="button-check" href="#">Забронировать</a>
+                                        </p>
+                                    </div>
+                                    <div class="first-ret">
+                                        <p class="stars"></p>
+                                        <p class="rating">Рейтинг: 8,5</p>
+                                    </div>
                                 </li>
-                    </div>
-                            <li class="hotels-item">
-                                <p class="hotels-photo">
-                                    <img src="image/photo-motel.jpg" alt="фото мотеля Desert"/>
-                                </p>
-                                <h4>Desert Quail Inn</h4>
-                                <p class="hotels-item-type">Мотель</p>
-                                <p class="hotels-item-type">от 3 000 Р</p>
-                                <a class="button-more-info" href="#">Подробнее</a>
-                                <a class="button-check" href="#">Забронировать</a>
-                                <p class="rating">Рейтинг 8,9</p>
-                            </li>
-                            <li class="hotels-item">
-                                <p class="hotels-photo">
-                                    <img src="image/photo-apartament.jpg" alt="фото апартаментов Villas"/>
-                                </p>
-                                <h4>Villas at Poco Diablo</h4>
-                                <p class="hotels-item-type">Апартаменты</p>
-                                <p class="hotels-item-type">от 2 000 Р</p>
-                                <a class="button-more-info" href="#">Подробнее</a>
-                                <a class="button-check" href="#">Забронировать</a>
-                                <p class="rating">Рейтинг 9,2</p>
-                            </li>
-                        </ul>
+                    <!-- </div> -->
+                                <li class="hotels-item">
+                                    <p class="hotels-photo">
+                                        <img src="image/photo-motel.jpg" alt="фото мотеля Desert"/>
+                                    </p>
+                                    <div class="first-hot">
+                                        <h4 class="hotels-title">Desert Quail Inn</h4>
+                                        <p class="hotels-item-type">
+                                           <span>Мотель</span> 
+                                           <span>от 3 000 Р</span>
+                                        </p>
+                                        <p class="botton-form">
+                                            <a class="button-more-info" href="#">Подробнее</a>
+                                            <a class="button-check" href="#">Забронировать</a>
+                                        </p>
+                                    </div>
+                                    <div class="first-ret">
+                                        <p class="stars"></p>
+                                        <p class="rating">Рейтинг: 8,5</p>
+                                    </div>
+                                    </li>
+                                    <li class="hotels-item">
+                                        <p class="hotels-photo">
+                                            <img src="image/photo-apartament.jpg" alt="фото апартаментов Villas"/>
+                                        </p>
+                                    <div class="first-hot">    
+                                        <h4 class="hotels-title">Villas at Poco Diablo</h4>
+                                        <p class="hotels-item-type">
+                                        <span>Апартаменты</span> 
+                                        <span>от 2 000 Р</span>
+                                        </p> 
+                                        <p class="botton-form">
+                                            <a class="button-more-info" href="#">Подробнее</a>
+                                            <a class="button-check" href="#">Забронировать</a>
+                                        </p>
+                                    </div>
+                                    <div class="first-ret">
+                                        <p class="stars"></p>
+                                        <p class="rating">Рейтинг: 8,5</p>
+                                    </div>
+                                    
+                                </li>
+                            </ul>
                 </section>
         </div>
     </main>
     
     <footer class="main-footer">
-        <a class="hashtag" href="index.html">#Visitsedona</a>
-        <h3>Ссылки на социальные сети</h3>
-        <ul class="footer-social">
-            <li>
-                <a href="https://twitter.com" title="Твиттер">
-                    <img class="social-icon" src="image/twitter-icon.svg" width="17" height="15" alt="иконка твиттера"/>
-                </a>
-            </li>
-            <li>
-                <a href="https://ru-ru.facebook.com" title="Фейсбук">
-                    <img class="social-icon" src="image/fb-icon.svg" width="17" height="15" alt="иконка фейсбук"/>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com" title="Ютуб">
-                    <img class="social-icon" src="image/youtube-icon.svg" width="17" height="15" alt="иконка ютуба"/>
-                </a>
-            </li>
-        </ul>
-        <p class="footer-copyright">Website by</p>
-        <a class="logo-name" href="#"></a>
+        <div class="footer-container">
+            <a class="hashtag col"  href="index.html">#Visitsedona</a>
+            <div class="footer-social col">
+                <h3 class="visiually-hidden">Ссылки на социальные сети</h3>
+                <ul class="footer-social">
+                    <li>
+                        <a class="social-link" href="https://twitter.com" title="Твиттер">
+                            <img  src="image/twitter-icon.svg" width="17" height="15" alt="иконка твиттера"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="https://ru-ru.facebook.com" title="Фейсбук">
+                            <img  src="image/fb-icon.svg" width="17" height="15" alt="иконка фейсбук"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="https://www.youtube.com" title="Ютуб">
+                            <img  src="image/youtube-icon.svg" width="17" height="15" alt="иконка ютуба"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <p class="copyright">
+                    <span class="footer-copyright">Website by</span>
+                    <a class="logo-name" href="#"></a>
+                </p>
+            </div>
+        </div>
     </footer>
 </div>
 </body>
